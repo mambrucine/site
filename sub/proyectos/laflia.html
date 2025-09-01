@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title> MAMBRU </title>
+    
+	<style>     
+    
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Boldonse&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+       body {
+				background-color: white;
+			}
+        
+            .caja {
+				width: 100vw;
+				height: 40px;
+				background-color: white;
+				margin: 0px;
+			}
+
+			.caja1 {
+				width: 25vw;
+				float: left;
+				position: relative;
+				background-color: white;
+			} 
+            /* .bordes {
+				width: content-aware;
+				height: 5px;
+				border: solid 1px;
+				border-radius: 30px;
+			}*/
+            .etiquetas {
+				font-family: 'Roboto Condensed';
+				font-size: 16px;
+                font-weight: 300;
+				color: black;
+				text-align: center;
+				margin-top: 12px;
+			}
+			a:link {
+				color: black;
+				text-decoration: none;
+			}
+			a:visited {
+				color: black;
+			}
+			a:hover {
+				color: red;
+			}   
+            .cajatop {
+				width: 99vw; height: 60px; float: left; margin-top: 40px; margin-bottom: 100px;
+			}
+            .cajatitulo {
+                width: 70vw; height: 60px; float: left;
+            }
+			#titulo{
+					font-family: 'Boldonse'; font-size: 80px;
+					margin: 0px; color: black; text-align: left;
+			}
+            .cajainsta {
+                width: 99vw; height: auto; display: flex; margin-bottom: 10px; margin-top: 10px; justify-content: right;
+            }
+            #insta {
+                font-family: 'Barlow Condensed'; font-size: 25px; font-weight: 600;
+				margin: 0px; color: black; text-align: right; 
+            }
+            .cajasubtitulo{
+                width: 28vw; height: 60px; float: left; 
+            }
+            .subtitulo{
+                font-family: 'Roboto Condensed'; font-size: 22px; font-weight: 300;
+				margin: 0px; color: black; text-align: right;
+            }
+
+			.stillmain{
+                width: 100%;       
+				display: flex;
+				position: relative;
+				overflow: hidden;
+				justify-content: center; 
+				align-items: center; 
+                margin-left: auto; margin-right: auto;
+
+            }
+            .stillmain img {	
+                display: block;   
+                width: 100%;       
+                height: auto;      
+                margin-bottom: 50px;
+			}
+            .cajasinopsis {
+                width: 70vw; height: auto; margin-bottom: 50px; margin-left: auto; margin-right: auto;
+            }
+            .sinopsis{
+                font-family: 'Roboto Condensed'; font-size: 24px; font-weight: 300;
+				margin: 0px; color: black; text-align: center;
+            }
+
+            .cajaficha {
+                width: 100vw;
+                height: auto;
+            }
+            .cajamargenizq {
+                width: 20vw;  float: left;
+                height: 600px;
+            }
+            .cajas {
+                width: 25vw;  float: left;
+                height: 400px; margin-top: 15px; 
+            }
+            .cajaposter {
+                width: 30vw;  float: left;
+                height: 700px; margin-left: 20px;
+            }
+            .cajaposter img {
+                width: 100%;                
+                height: 100%;                
+                object-fit: contain;           
+                display: block;
+            }
+            
+            .tituloficha {
+                font-family: 'Barlow Condensed', sans-serif; font-size: 20px;
+                font-weight: 600; color: black; margin-left: 20px;
+            }
+            .infoficha {
+                font-family: 'Roboto Condensed'; font-size: 20px; font-weight: 300;
+				margin: 0px; color: black; text-align: left; margin-left: 20px;
+            }
+
+
+            .cajastills {
+                width: 100vw; float: left; margin-top: 20px;
+            }
+            .stills {
+                width: 33vw; float: left; margin-left: 2px;
+            }
+            .stills img {	
+                display: block;   
+                width: 100%;       
+                height: auto;      
+                margin-bottom: 50px;
+			}
+
+            .cajadire {
+                width: 100vw; float: left; 
+            }
+            .cajainfodire {
+                width: 60vw; height: auto; float: left; margin-left: 100px;
+            }
+            .cajafotodire {
+                width: 40 vw; float: left; margin-left: 50px;
+            }
+            .fotodire {
+                width: 330px; height: 330px; border-radius: 50%; overflow: hidden;
+            }
+            .fotodire img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; 
+                display: block;
+            }
+            .titulodire {
+                font-family: 'Barlow Condensed', sans-serif; font-size: 24px;
+                font-weight: 600; color: black; margin-left: 0px;
+            }
+            .infodire {
+                font-family: 'Roboto Condensed'; font-size: 24px; font-weight: 300;
+				margin: 0px; color: black; text-align: left;
+            }
+
+
+
+
+
+            .cajacolumnas {
+                width: 100vw; height: auto; display: flex; margin-bottom: 70px; margin-left: 20px;
+            }
+			.columnas{
+                width: 25vw; height: auto; float: left; margin-top: 60px; 
+                margin-left: 0px; background-color: white;
+
+            }
+            .infotitulos {
+                font-family: 'Roboto Condensed'; font-size: 20px; font-weight: 300;
+				color: black; text-align: left;
+            }
+             .infotitulos2 {
+                font-family: 'Roboto Condensed'; font-size: 20px; font-weight: 300;
+				color: white; text-align: left;
+            }
+            .info {
+                font-family: 'Roboto Condensed'; font-size: 18px; font-weight: 300;
+				color: black; text-align: left;
+            }
+            .linea {
+                border: none;
+                height: 1px;
+                background-color: black;
+                margin-left: -30px;
+            }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="caja">
+		<div class="caja1">
+			<!-- <div class="bordes"> -->
+			<p class="etiquetas"> <a href="../../index.html">  <img src="imagenesmemotest/mambrublack.png" alt="Home" style="height: 60px; margin-top: -20px;"> </a> </p>
+			<!-- </div> -->
+		</div>
+		<div class="caja1">
+			<!-- <div class="bordes"> -->
+			<p class="etiquetas"> <a href="../work.html"> WORK </a> </p>
+			<!-- </div> -->
+		</div>
+		<div class="caja1">
+			<!-- <div class="bordes"> -->
+				<p class="etiquetas"> <a href="../about.html"> ABOUT </a> </p>
+			<!-- </div> -->
+		</div>
+		<div class="caja1">
+			<!-- <div class="bordes"> -->
+			<p class="etiquetas"> <a href="../contact.html"> CONTACT </a> </p>
+			<!-- </div> -->
+		</div>
+	</div>
+    
+    <div class="cajatop">
+        <div class="cajatitulo">
+            <p id="titulo"> LA FLIA </p>
+        </div>
+        <div class="cajasubtitulo">
+            <p class="subtitulo">
+                SHORT FILM <br>
+                COMEDY DRAMA  <br>
+                ARGENTINA <br>
+                2023 <br>
+                15'
+            </p>
+        </div>
+    </div>
+
+     <div class="stillmain">
+            <img src="imageneslaflia/STILL1.jpg" alt="LA FLIA"> 
+    </div>
+
+    <div class="cajasinopsis">
+         <p class="sinopsis">
+            Carlos, Paula, and their two kids, Juana and Fausto, get together around the table for dinner. The idea of a nice family dinner to celebrate the parents' anniversary collapses as the tensions arise along the night to reveal the cracks of a fragmented family. 
+        </p>
+    </div>
+
+    <div class="cajaficha">
+        <div class="cajamargenizq"></div>
+        <div class="cajaposter">
+            <img src="imageneslaflia/Poster.jpeg" alt="LA FLIA">
+        </div>
+        <div class="cajas">
+            <p class="tituloficha">DATA SHEET</p>
+            <p class="infoficha">
+                Dir <b> Tiago Suliansky </b><br>
+                Title <b> La Flia </b><br>
+                Title Int’l <b> A family affair </b><br>
+                Country <b> Argentina </b><br>
+                Language <b> Spanish </b><br>
+                Genre <b> Comedy / Drama </b><br>
+                Length <b> 15 mins </b><br>
+                Shooting Format <b> Digital / Color </b><br>
+                Year <b> 2023 </b>
+            </p>
+            <p class="tituloficha">PROD</p>
+            <p class="infoficha">
+                Juan Wenceslao Hayzus
+            </p>
+            <p class="tituloficha">CAST</p>
+            <p class="infoficha">
+                Alma Buffay <br>
+                German Basso <br>
+                Felipe Flossdorf <br>
+                Renata Marmora <br>
+            </p>
+            <p class="tituloficha">DISTRIBUTION</p>
+            <p class="infoficha">
+                ORBITA, programme “Convivencias” (Junio 2024). (ARG) <br>
+                Tokyo International Short Film Festival <br>
+                Roma International Short Film Festival <br>
+                New York Tri-State Film Festival (Winner of Best Student Short Film) <br>
+                Lift-off Global Network (First-time directors)
+            </p>
+        </div>
+        <div class="cajas"></div>
+        
+    </div>
+
+    <div class="cajastills">
+        <div class="stills">
+             <img src="imageneslaflia/STILL2.jpg" alt="LA FLIA">
+        </div>
+         <div class="stills">
+             <img src="imageneslaflia/STILL3.jpg" alt="LA FLIA">
+        </div>
+         <div class="stills">
+             <img src="imageneslaflia/STILL4.jpg" alt="LA FLIA">
+        </div>
+    </div>
+
+    <div class="cajadire">
+        <div class="cajainfodire">
+            <p class="titulodire">ABOUT THE DIRECTOR</p>
+            <p class="infodire">
+                Tiago Suliansky is a director, scriptwriter, art director and costume designer, currently completing a degree in Film Direction in Universidad del Cine (Argentina). He’s the writer and director of two short films: La Flia (2023) -selected in international festivals and winner of the award to Best Student Short Film in the New York Tri-State Film Festival- and Jajan’t, that is today in postproduction. As Art Director he participated in short films as Quiero un pucho (2023) by Antonella Jiménez, Curitas (2023) and Tiempo (2023) by Juana Palazzi, Baila tu (2023) by Ezequiel Dykerman, Frontispicio (2024) by Juan Manuel Corvalan, Café con leche y dos medialunas (2024) by Camila Medrano and Ruido estatico (2025) by Mateo Garimbeti. He worked as Costume Designer for short films like Showroom (2023) by Caterina Diaz, Cráter (2023) by Valentina Cabado and Linaje (2023) by Camila Nuñez Montalbetti; Also in two feature films Memotest (2024) by Catalina Cortinez and Lo que nos queda (2023) by Violeta Cárcova & Nicolas Alan Medina and in the music video Sali con mi ex by musical artist CAE. 
+            </p>
+        </div>
+        <div class="cajafotodire">
+            <div class="fotodire">
+                <img src="imageneslaflia/fotodire.jpg" alt="DirectorTiagoSuliansky">
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="cajainsta">
+        <p id="insta">
+            @memotestpelicula
+        </p>
+    </div>
+-->
+   
+<div class="cajacolumnas">
+            <div class="columnas">
+                <p class="infotitulos2">
+                    MAMBRU cine
+                </p>
+                <hr class="linea">
+                <p class="infotitulos">
+                    MAMBRU cine
+                </p>
+                <p class="info">
+                    MADRID, ESP
+                    <br>
+                    BUENOS AIRES, ARG
+                </p>
+            </div>
+
+            <div class="columnas">
+                <p class="infotitulos2">
+                    MENU
+                </p>
+                <hr class="linea">
+                <br>
+                <p class="info">
+                  
+                </p>
+            </div>
+
+            <div class="columnas">
+                <p class="infotitulos2">
+                    SOCIALS
+                </p>
+                <hr class="linea">
+                <p class="infotitulos">
+                    SOCIALS
+                </p>
+                <p class="info">
+                    <a href="https://www.instagram.com/mambrucine?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> INSTAGRAM
+                    <br>
+                    <a href="https://vimeo.com/user243295687?fl=pp&fe=sh"> VIMEO
+                    <br>
+                    <a href=""> LINKEDIN
+                </p>
+            </div>
+
+            <div class="columnas">
+                <p class="infotitulos2">
+                   CONTACT
+                </p>
+                <hr class="linea">
+                <br>
+                <p class="info">
+                   
+                </p>
+            </div>
+        </div>  
+    
+
+
+</body>

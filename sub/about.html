@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title> MAMBRU </title>
+    
+	<style>     
+    
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Boldonse&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+       body {
+				background-color: black;     
+            } 
+            .caja {
+				width: 100vw;
+				height: 40px;
+				background-color: black;
+				margin: 0px;
+			}
+
+			.caja1 {
+				width: 25vw;
+				float: left;
+				position: relative;
+				background-color: black;
+			} 
+            /* .bordes {
+				width: content-aware;
+				height: 5px;
+				border: solid 1px;
+				border-radius: 30px;
+			}*/
+            .etiquetas {
+				font-family: 'Roboto Condensed';
+				font-size: 16px;
+                font-weight: 300;
+				color: white;
+				text-align: center;
+				margin-top: 12px;
+			}
+			a:link {
+				color: white;
+				text-decoration: none;
+			}
+			a:visited {
+				color: white;
+			}
+			a:hover {
+				color: red;
+			}   
+            .cajatitular {
+				width: 100vw; height: 60px; margin-top: 60px; margin-bottom: 150px; 
+                float: left;
+			}
+            .cajatitulo {
+                width: 50vw; float: left; margin-left: 20px;
+            }
+			#titulo{
+					font-family: 'Boldonse'; font-size: 110px;
+					margin: 0px; color: white; text-align: left;
+			}
+            .cajabio {
+				width: 100vw; height: 60px; 
+                margin-top: 120px; margin-left: 20px; margin-bottom: 100px;
+			}
+            .cajabio img{
+                height: 100%;
+            }
+            .cajabiografia{
+                width: 50vw; height: 60px; float: left;
+            }
+            #bio{
+                font-family: 'Roboto Condensed'; font-weight: 300; font-size: 18px;
+                color: white; text-align: left; max-width: 100%;
+            }
+
+            .cajasubtitulo {
+                width: 100vw;
+                float: left;
+                height: auto; 
+                margin-top: -80px;
+            }
+          
+            .subtitulo {
+                font-family: 'Boldonse'; font-size: 60px;
+				color: white; text-align: center; float: center;
+            }
+            .cajafototeam {
+                width: 50vw; float: right; margin-top: -90px; margin-right: -60px;
+            }
+            .fototeam{
+                width: 40vw;       
+				float:right;
+				overflow: hidden;
+				justify-content: right; 
+				align-items: right; 
+             
+                
+               
+            }
+            .fototeam img {	
+            display: block;   
+            width: 100%;       
+            height: auto;      
+            
+			}
+           
+
+            .cajateam {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .cajaindividual {
+                width: 250px;
+                text-align: center;
+            }
+
+            .cajafoto {
+                position: relative;
+                overflow: hidden;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+
+            .cajafoto img {
+                width: 100%;
+                display: block;
+                height: auto;
+            }
+
+            /* 
+            .overlay {
+                position: absolute;
+                inset: 0;
+                background: rgba(0,0,0,0.65);
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                transform: translateY(10px);
+                transition: opacity 0.3s ease, transform 0.3s ease;
+                padding: 1rem;
+                text-align: center;
+            }
+
+            .overlay p {
+                margin: 0.2rem 0;
+            }
+
+           
+            .cajafoto:hover .overlay {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            */
+            
+
+             .cajateam {
+                width: 100vw; height: 500px; margin-bottom: 50px;
+            }
+            .cajaindividual{
+                width: 32vw; height: 500px; float: left; text-align: center;
+            }
+            .cajafoto{
+                     
+                width: 25vw;
+                height: 400px;
+				display: flex;
+				overflow: hidden;
+				justify-content: center; 
+				align-items: center; 
+                margin-left: 60px;
+            }
+            .foto img{
+                width: auto;               
+                height: 100%;   
+                width: 100%;           
+                object-fit: contain;  
+                display: block;
+                
+
+            }
+            .nombres{
+                font-family: 'Boldonse'; font-size: 20px;
+                color: white; text-align: center;
+            }
+            .roles{
+                font-family: 'Roboto Condensed'; font-weight: 300; font-size: 20px;
+                color: white; text-align: center;
+            }
+            .cajabioteam {
+                width: 20vw; height: auto; float: left; margin-left: 90px;
+            }
+            .bioteam {
+                font-family: 'Roboto Condensed'; font-weight: 300; font-size: 14px;
+                color: white; text-align: center;
+            }
+            
+
+            .cajamargenabajo{
+                width: 100vw; height: 100px; margin-top: 200px;
+            }
+
+
+
+
+             .cajacolumnas {
+                width: 100vw; height: auto; display: flex; margin-bottom: 70px; margin-left: 20px;
+            }
+			.columnas{
+                width: 25vw; height: auto; float: left; margin-top: 60px; 
+                margin-left: 0px; background-color: black;
+
+            }
+            .infotitulos {
+                font-family: 'Roboto Condensed'; font-size: 20px; font-weight: 300;
+				color: white; text-align: left;
+            }
+             .infotitulos2 {
+                font-family: 'Roboto Condensed'; font-size: 20px; font-weight: 300;
+				color: black; text-align: left;
+            }
+            .info {
+                font-family: 'Roboto Condensed'; font-size: 18px; font-weight: 300;
+				color: white; text-align: left;
+            }
+            .linea {
+                border: none;
+                height: 1px;
+                background-color: white;
+                margin-left: -30px;
+            }
+    </style>
+
+</head>
+
+<body>
+    <div class="caja">
+		<div class="caja1">
+			<!-- <div class="bordes"> -->
+			<p class="etiquetas"> <a href="../index.html">  <img src="imagenesteam/mambruwhite.png" alt="Home" style="height: 60px; margin-top: -20px;"> </a> </p>
+			<!-- </div> -->
+		</div>
+		<div class="caja1">
+			<!-- <div class="bordes"> -->
+			<p class="etiquetas"> <a href="work.html"> WORK </a> </p>
+			<!-- </div> -->
+		</div>
+		<div class="caja1">
+			<!-- <div class="bordes"> -->
+				<p class="etiquetas"> <a href="about.html"> ABOUT </a> </p>
+			<!-- </div> -->
+		</div>
+		<div class="caja1">
+			<!-- <div class="bordes"> -->
+			<p class="etiquetas"> <a href="contact.html"> CONTACT </a> </p>
+			<!-- </div> -->
+		</div>
+	</div>
+
+        <div class="cajatitular">
+            <div class="cajatitulo">
+                <p id="titulo">ABOUT</p>
+            </div>
+            
+        </div>
+    
+        <div class="cajabio">
+                <div class="cajabiografia"> 
+                    <p id="bio">
+                    Mambrú Cine is an independent production and distribution company founded in 2023 by Felipe Schnurr and Margarita Mangiantini, with bases in Buenos Aires and Madrid. Since its inception, it has produced various projects and distributed multiple short films. Notable productions include Showroom by Caterina Díaz — a short film featured in international festivals and selected for the Globus section of the Molins Horror Film Festival — and Solas by Marbella Tescari, selected for the post-production mentorships at ABC BAFICI. Most recently, Mambrú Cine is producing and distributing Memotest, the debut feature film by Catalina Cortínez Tripodi, which is in post-production.
+                    </p>
+                </div>
+                <div class="cajafototeam">
+                <div class="fototeam">
+                    <img src="imagenesteam/soldaditos.png"> 
+                </div>
+            </div>
+           <!-- <img src="imagenesteam/soldaditos.png" alt="Soldaditos"> -->
+        </div>
+
+        <div class="cajasubtitulo">
+            <p class="subtitulo"> TEAM </p>
+             
+        </div>
+
+       
+       
+        <div class="cajateam">
+            <div class="cajaindividual">
+                <div class="cajafoto">
+                    <img src="imagenesteam/felipe.png" alt="Felipe">
+                </div>
+                <p class="nombres"> 
+                    Felipe Schnurr
+                </p>
+                <p class="roles">
+                    Founder & Executive Producer
+                </p>
+                <div class="cajabioteam">
+                    <p class="bioteam">
+                        Felipe Schnurr (2002) is a director and producer based in Buenos Aires and a graduate of the Universidad del Cine. He has worked across directing, production, art, and costume departments on both student and professional projects, including Showroom (dir. Caterina Díaz, 2023), Fragmentos de un Temblor (dir. Marbella Tescari, 2023), Ahora También (dir. Briana Turi, 2023), Soy Como Tú (dir. Miranda Belatti, 2022), Quinta Pared (dir. Josue Abalovich, 2022), Bondi (dir. Luciano Florio, 2024), and Consolada (dir. Luján & Milagros Klappenbach, 2025), among others.
+                        <br>
+                        Since 2022, he has been part of the awards team at CICLOPE Festival in Berlin, where he currently works as Awards Coordinator. In 2023, together with fellow filmmakers, he co-founded the student production company Mambru Cine, dedicated to producing and distributing short films. He is currently in post-production on his first feature as a producer, Memotest (dir. Catalina Cortinez).
+                    </p>
+                </div>
+            </div>
+      
+
+     
+            <div class="cajaindividual">
+                <div class="cajafoto">
+                    <img src="imagenesteam/marga.png" alt="Marga">
+                </div>
+                <p class="nombres"> 
+                    Margarita Mangiantini
+                </p>
+                <p class="roles">
+                    Founder & Managing Director
+                </p>
+                <div class="cajabioteam">
+                    <p class="bioteam">
+                        Margarita Mangiantini (2001) is an Argentine producer and distributor who also worked for the departments of direction and art on different audiovisual projects. She studied Filmmaking at Universidad del Cine in Buenos Aires and completed a semester abroad at LUCA School of Arts in Brussels, since then she’s based in Madrid, Spain. With a particular interest in distribution she co-funded Mambrú Cine, an independent production and distribution label in which she serves as Managing Director.
+                    </p>
+                </div>
+            </div>
+        
+
+        
+            <div class="cajaindividual">
+                <div class="cajafoto">
+                    <img src="imagenesteam/helen.jpeg" alt="Helena">
+                </div>
+                <p class="nombres"> 
+                    Helena Massaccesi
+                </p>
+                <p class="roles">
+                    Executive Producer
+                </p>
+                 
+            </div>
+        </div>
+
+        <div class="cajamargenabajo">
+        </div>
+
+
+
+
+
+        <div class="cajacolumnas">
+            <div class="columnas">
+                <p class="infotitulos2">
+                    MAMBRU cine
+                </p>
+                <hr class="linea">
+                <p class="infotitulos">
+                    MAMBRU cine
+                </p>
+                <p class="info">
+                    MADRID, ESP
+                    <br>
+                    BUENOS AIRES, ARG
+                </p>
+            </div>
+
+            <div class="columnas">
+                <p class="infotitulos2">
+                    MENU
+                </p>
+                <hr class="linea">
+                <br>
+                <p class="info">
+                  
+                </p>
+            </div>
+
+            <div class="columnas">
+                <p class="infotitulos2">
+                    SOCIALS
+                </p>
+                <hr class="linea">
+                <p class="infotitulos">
+                    SOCIALS
+                </p>
+                <p class="info">
+                    <a href="https://www.instagram.com/mambrucine?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> INSTAGRAM
+                    <br>
+                    <a href="https://vimeo.com/user243295687?fl=pp&fe=sh"> VIMEO
+                    <br>
+                    <a href=""> LINKEDIN
+                </p>
+            </div>
+
+            <div class="columnas">
+                <p class="infotitulos2">
+                   CONTACT
+                </p>
+                <hr class="linea">
+                <br>
+                <p class="info">
+                   
+                </p>
+            </div>
+        </div>  
+</body>

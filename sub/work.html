@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title> MAMBRU </title>
+    
+	<style>     
+    
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Boldonse&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+       body {
+				background-color: white;
+			}
+        
+            .caja {
+				width: 100vw;
+				height: 40px;
+				background-color: white;
+				margin: 0px;
+			}
+
+			.caja1 {
+				width: 25vw;
+				float: left;
+				position: relative;
+				background-color: white;
+			} 
+            /* .bordes {
+				width: content-aware;
+				height: 5px;
+				border: solid 1px;
+				border-radius: 30px;
+			}*/
+            .etiquetas {
+				font-family: 'Roboto Condensed';
+				font-size: 16px;
+                font-weight: 300;
+				color: black;
+				text-align: center;
+				margin-top: 12px;
+			}
+			a:link {
+				color: black;
+				text-decoration: none;
+			}
+			a:visited {
+				color: black;
+			}
+			a:hover {
+				color: red;
+			}   
+            .cajatitulo {
+				width: 100vw; height: 60px; display: flex; margin-top: 60px; margin-bottom: 120px;
+			}
+			#titulo{
+					font-family: 'Boldonse'; font-size: 110px; margin-top: 0;
+					margin-left: 16px; color: black; text-align: left;
+			}
+			.cajatrabajo {
+                width: 48vw;
+                min-height: 410px; 
+                float: left;
+                position: relative;
+                background-color: white;
+				margin-bottom: 30px;
+				margin-left: 20px;
+                }
+			.trabajo1{
+				width: 48vw; height: 350px;
+				float:left;
+				position: relative;
+				background-color: black;
+				overflow: hidden;
+				justify-content: center; 
+				align-items: center;
+			}
+			.trabajo1 img {
+				max-width: 100%; top: 45%; left: 50%; 
+				position: absolute; transform: translate(-50%, -45%);
+			}
+            .trabajo2{
+				width: 48vw; height: 350px;
+				float:left;
+				position: relative;
+				background-color: black;
+				overflow: hidden;
+				justify-content: center; 
+				align-items: center; 
+			}
+			.trabajo2 img {
+				max-width: 100%; top: 50%; left: 50%; 
+				position: absolute; transform: translate(-50%, -50%);
+			}
+           .cajapiedefoto {
+                width: 47,5vw;
+                height: 40px; 
+                background-color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                justify-content: flex-start;
+                padding-left: 10px;
+                z-index: 1;
+                border: solid 1px; border-color: black; 
+                }
+
+            .info {
+                font-family: 'Barlow Condensed', sans-serif;
+                font-size: 20px;
+                font-weight: 600;
+                color: white; 
+                margin: 0;
+                }
+            /*.cajapiedefoto a:link,
+            .cajapiedefoto a:visited {
+            color: white;
+            text-decoration: none; 
+            }
+            .cajapiedefoto a:hover {
+            color: red; 
+            } */
+            .info2 {
+				font-family: 'Roboto Condensed', sans-serif;
+				font-size: 18px ;
+                font-weight: 300;
+				color: white;
+			}
+
+
+
+
+			 .cajacolumnas {
+                width: 100vw; height: auto; display: flex; margin-bottom: 70px; margin-left: 20px;
+            }
+			.columnas{
+                width: 25vw; height: auto; float: left; margin-top: 60px; 
+                margin-left: 0px; background-color: white;
+
+            }
+            .infotitulos {
+                font-family: 'Roboto Condensed'; font-size: 20px; font-weight: 300;
+				color: black; text-align: left;
+            }
+             .infotitulos2 {
+                font-family: 'Roboto Condensed'; font-size: 20px; font-weight: 300;
+				color: white; text-align: left;
+            }
+            .info {
+                font-family: 'Roboto Condensed'; font-size: 18px; font-weight: 300;
+				color: black; text-align: left;
+            }
+            .linea {
+                border: none;
+                height: 1px;
+                background-color: black;
+                margin-left: -30px;
+            }
+    </style>
+
+</head>
+
+<body>
+    <div class="caja">
+		<div class="caja1">
+			<!-- <div class="bordes"> -->
+			<p class="etiquetas"> <a href="../index.html">  <img src="imagenesproyectos/mambrublack.png" alt="Home" style="height: 60px; margin-top: -20px;"> </a> </p>
+			<!-- </div> -->
+		</div>
+		<div class="caja1">
+			<!-- <div class="bordes"> -->
+			<p class="etiquetas"> <a href="work.html"> WORK </a> </p>
+			<!-- </div> -->
+		</div>
+		<div class="caja1">
+			<!-- <div class="bordes"> -->
+				<p class="etiquetas"> <a href="about.html"> ABOUT </a> </p>
+			<!-- </div> -->
+		</div>
+		<div class="caja1">
+			<!-- <div class="bordes"> -->
+			<p class="etiquetas"> <a href="contact.html"> CONTACT </a> </p>
+			<!-- </div> -->
+		</div>
+	</div>
+    
+		<div class="cajatitulo">
+			<p id="titulo"> PROYECTS </p>
+		</div>
+		
+		<div class="cajatrabajo">
+			<div class="trabajo1">
+				<a  href="proyectos/Memotest.html"> <img src="imagenesproyectos/memotest1.jpg" alt="Memotest"> </a>
+			</div>
+            <div class="cajapiedefoto">
+				<p class="info"> 
+					<a  href="proyectos/Memotest.html"> MEMOTEST </a> </p>
+			</div>
+			<div class="cajapiedefoto">
+				<p class="info2">
+					<a  href="proyectos/Memotest.html"> Romantic Comedy 2023 </a> </p>
+			</div>
+        </div>
+
+        <div class="cajatrabajo">
+            <div class="cajapiedefoto">
+				<p class="info"> 
+					<a  href="proyectos/Wenceslao.html"> WENCESLAO ES ZAPATERO </a> </p>
+			</div>
+			<div class="cajapiedefoto">
+				<p class="info2">
+					<a  href="proyectos/Wenceslao.html"> Fiction / Comedy 2023 </a> </p>
+			</div>
+            <div class="trabajo2">
+				<a  href="proyectos/Wenceslao.html"> <img src="imagenesproyectos/wenceslao1.jpg" alt="Wenceslao es Zapatero"> </a>
+			</div>
+        </div>
+
+
+        <div class="cajatrabajo">
+			<div class="trabajo1">
+				<a  href="proyectos/Majoyalfonso.html"> <img src="imagenesproyectos/majo1.jpg" alt="MAJO Y ALFONSO"> </a>
+			</div>
+            <div class="cajapiedefoto">
+				<p class="info"> 
+					<a  href="proyectos/Majoyalfonso.html"> MAJO Y ALFONSO </a> </p>
+			</div>
+			<div class="cajapiedefoto">
+				<p class="info2">
+					<a  href="proyectos/Majoyalfonso.html"> Fiction / Comedy 2024 </a> </p>
+			</div>
+        </div>
+
+        <div class="cajatrabajo">
+            <div class="cajapiedefoto">
+				<p class="info"> 
+					<a  href="proyectos/chicasconocenchicos.html"> CHICA(S) CONOCE(N) CHICO(S) </a> </p>
+			</div>
+			<div class="cajapiedefoto">
+				<p class="info2">
+					<a  href="proyectos/chicasconocenchicos.html"> Fiction / Comedy  </a> </p>
+			</div>
+            <div class="trabajo2">
+				<a  href="proyectos/chicasconocenchicos.html"> <img src="imagenesproyectos/chicas1.jpg" alt="CHICA(S) CONOCEN CHICO(S)"> </a>
+			</div>
+        </div>
+
+
+        <div class="cajatrabajo">
+			<div class="trabajo1">
+				<a  href="proyectos/showroom.html"> <img src="imagenesproyectos/showroom1.jpg" alt="SHOWROOM"> </a>
+			</div>
+            <div class="cajapiedefoto">
+				<p class="info"> 
+					<a  href="proyectos/showroom.html"> SHOWROOM </a> </p>
+			</div>
+			<div class="cajapiedefoto">
+				<p class="info2">
+					<a  href="proyectos/showroom.html"> Horror / Comedy / Crime 2023 </a> </p>
+			</div>
+        </div>
+
+        <div class="cajatrabajo">
+            <div class="cajapiedefoto">
+				<p class="info"> 
+					<a  href="proyectos/Fragmentosdeuntemblor.html"> FRAGMENTOS DE UN TEMBLOR (EX SOLAS) </a> </p>
+			</div>
+			<div class="cajapiedefoto">
+				<p class="info2">
+					<a  href="proyectos/Fragmentosdeuntemblor.html"> Fiction/Drama  </a> </p>
+			</div>
+            <div class="trabajo2">
+				<a  href="proyectos/Fragmentosdeuntemblor.html"> <img src="imagenesproyectos/fragmentos1.png" alt="FRAGMENTOS DE UN TEMBLOR"> </a>
+			</div>
+        </div>
+
+		<div class="cajatrabajo">
+			<div class="trabajo1">
+				<a  href="proyectos/lahistoriadetusojos.html"> <img src="imagenesproyectos/lahistoria1.jpg" alt="LA HISTORIA DE TUS OJOS"> </a>
+			</div>
+            <div class="cajapiedefoto">
+				<p class="info"> 
+					<a  href="proyectos/lahistoriadetusojos.html"> LA HISTORIA DE TUS OJOS </a> </p>
+			</div>
+			<div class="cajapiedefoto">
+				<p class="info2">
+					<a  href="proyectos/lahistoriadetusojos.html"> Fiction / Drama IN POSTPRODUCTION </a> </p>
+			</div>
+        </div>
+
+		<div class="cajatrabajo">
+            <div class="cajapiedefoto">
+				<p class="info"> 
+					<a  href="proyectos/soycomotu.html"> SOY COMO TU </a> </p>
+			</div>
+			<div class="cajapiedefoto">
+				<p class="info2">
+					<a  href="proyectos/soycomotu.html"> Fiction  2024  </a> </p>
+			</div>
+            <div class="trabajo2">
+				<a  href="proyectos/soycomotu.html"> <img src="proyectos/imagenessoycomotu/bannerworkingonit.jpg" alt="SOY COMO TU"> </a>
+			</div>
+        </div>
+
+		<div class="cajatrabajo">
+			<div class="trabajo1">
+				<a  href="proyectos/laflia.html"> <img src="imagenesproyectos/laflia1.jpg" alt="LA FLIA"> </a>
+			</div>
+            <div class="cajapiedefoto">
+				<p class="info"> 
+					<a  href="proyectos/laflia.html"> LA FLIA </a> </p>
+			</div>
+			<div class="cajapiedefoto">
+				<p class="info2">
+					<a  href="proyectos/laflia.html"> Comedy / Drama 2023 </a> </p>
+			</div>
+        </div>
+
+
+
+
+
+
+		<div class="cajacolumnas">
+            <div class="columnas">
+                <p class="infotitulos2">
+                    MAMBRU cine
+                </p>
+                <hr class="linea">
+                <p class="infotitulos">
+                    MAMBRU cine
+                </p>
+                <p class="info">
+                    MADRID, ESP
+                    <br>
+                    BUENOS AIRES, ARG
+                </p>
+            </div>
+
+            <div class="columnas">
+                <p class="infotitulos2">
+                    MENU
+                </p>
+                <hr class="linea">
+                <br>
+                <p class="info">
+                  
+                </p>
+            </div>
+
+            <div class="columnas">
+                <p class="infotitulos2">
+                    SOCIALS
+                </p>
+                <hr class="linea">
+                <p class="infotitulos">
+                    SOCIALS
+                </p>
+                <p class="info">
+                    <a href="https://www.instagram.com/mambrucine?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> INSTAGRAM
+                    <br>
+                    <a href="https://vimeo.com/user243295687?fl=pp&fe=sh"> VIMEO
+                    <br>
+                    <a href=""> LINKEDIN
+                </p>
+            </div>
+
+            <div class="columnas">
+                <p class="infotitulos2">
+                   CONTACT
+                </p>
+                <hr class="linea">
+                <br>
+                <p class="info">
+                   
+                </p>
+            </div>
+        </div>  
+
+</body>

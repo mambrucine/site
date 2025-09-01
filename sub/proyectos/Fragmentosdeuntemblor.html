@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title> MAMBRU </title>
+    
+	<style>     
+    
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Boldonse&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+       body {
+				background-color: white;
+			}
+        
+            .caja {
+				width: 100vw;
+				height: 40px;
+				background-color: white;
+				margin: 0px;
+			}
+
+			.caja1 {
+				width: 25vw;
+				float: left;
+				position: relative;
+				background-color: white;
+			} 
+            /* .bordes {
+				width: content-aware;
+				height: 5px;
+				border: solid 1px;
+				border-radius: 30px;
+			}*/
+            .etiquetas {
+				font-family: 'Roboto Condensed';
+				font-size: 16px;
+                font-weight: 300;
+				color: black;
+				text-align: center;
+				margin-top: 12px;
+			}
+			a:link {
+				color: black;
+				text-decoration: none;
+			}
+			a:visited {
+				color: black;
+			}
+			a:hover {
+				color: red;
+			}   
+            .cajatop {
+				width: 99vw; height: 60px; float: left; margin-top: 40px; margin-bottom: 100px;
+			}
+            .cajatitulo {
+                width: 70vw; height: 60px; float: left;
+            }
+			#titulo{
+					font-family: 'Boldonse'; font-size: 44px;
+					margin: 0px; color: black; text-align: left;
+			}
+            .cajainsta {
+                width: 99vw; height: auto; display: flex; margin-bottom: 10px; margin-top: 10px; justify-content: right;
+            }
+            #insta {
+                font-family: 'Barlow Condensed'; font-size: 25px; font-weight: 600;
+				margin: 0px; color: black; text-align: right; 
+            }
+            .cajasubtitulo{
+                width: 28vw; height: 60px; float: left; 
+            }
+            .subtitulo{
+                font-family: 'Roboto Condensed'; font-size: 22px; font-weight: 300;
+				margin: 0px; color: black; text-align: right;
+            }
+
+			.stillmain{
+                width: 100%;       
+				display: flex;
+				position: relative;
+				overflow: hidden;
+				justify-content: center; 
+				align-items: center; 
+                margin-left: auto; margin-right: auto;
+
+            }
+            .stillmain img {	
+                display: block;   
+                width: 100%;       
+                height: auto;      
+                margin-bottom: 50px;
+			}
+            .cajasinopsis {
+                width: 70vw; height: auto; margin-bottom: 50px; margin-left: auto; margin-right: auto;
+            }
+            .sinopsis{
+                font-family: 'Roboto Condensed'; font-size: 24px; font-weight: 300;
+				margin: 0px; color: black; text-align: center;
+            }
+
+            .cajaficha {
+                width: 100vw;
+                height: auto;
+                margin-bottom: 30px;
+            }
+            .cajamargenizq {
+                width: 20vw;  float: left;
+                height: 200px;
+            }
+            .cajas {
+                width: 25vw;  float: left;
+                height: 400px; 
+            }
+            .cajaposter {
+                width: 30vw;  float: left;
+                height: 700px; margin-left: 20px;
+            }
+            .cajaposter img {
+                width: 100%;                
+                height: 100%;                
+                object-fit: contain;           
+                display: block;
+            }
+            
+            .tituloficha {
+                font-family: 'Barlow Condensed', sans-serif; font-size: 20px;
+                font-weight: 600; color: black; margin-left: 20px;
+            }
+            .infoficha {
+                font-family: 'Roboto Condensed'; font-size: 20px; font-weight: 300;
+				margin: 0px; color: black; text-align: left; margin-left: 20px;
+            }
+
+
+            .cajastills {
+                width: 100vw; float: left; margin-top: 20px;
+            }
+            .stills {
+                width: 33vw; float: left; margin-left: 2px;
+            }
+            .stills img {	
+                display: block;   
+                width: 100%;       
+                height: auto;      
+                margin-bottom: 50px;
+			}
+
+            .cajadire {
+                width: 100vw; float: left; 
+            }
+            .cajainfodire {
+                width: 60vw; height: auto; float: left; margin-left: 100px;
+            }
+            .cajafotodire {
+                width: 40 vw; float: left; margin-left: 50px;
+            }
+            .fotodire {
+                width: 330px; height: 330px; border-radius: 50%; overflow: hidden;
+            }
+            .fotodire img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; 
+                display: block;
+            }
+            .titulodire {
+                font-family: 'Barlow Condensed', sans-serif; font-size: 24px;
+                font-weight: 600; color: black; margin-left: 0px;
+            }
+            .infodire {
+                font-family: 'Roboto Condensed'; font-size: 24px; font-weight: 300;
+				margin: 0px; color: black; text-align: left;
+            }
+
+
+
+
+
+
+            .cajacolumnas {
+                width: 100vw; height: auto; display: flex; margin-bottom: 70px; margin-left: 20px;
+            }
+			.columnas{
+                width: 25vw; height: auto; float: left; margin-top: 60px; 
+                margin-left: 0px; background-color: white;
+
+            }
+            .infotitulos {
+                font-family: 'Roboto Condensed'; font-size: 20px; font-weight: 300;
+				color: black; text-align: left;
+            }
+             .infotitulos2 {
+                font-family: 'Roboto Condensed'; font-size: 20px; font-weight: 300;
+				color: white; text-align: left;
+            }
+            .info {
+                font-family: 'Roboto Condensed'; font-size: 18px; font-weight: 300;
+				color: black; text-align: left;
+            }
+            .linea {
+                border: none;
+                height: 1px;
+                background-color: black;
+                margin-left: -30px;
+            }
+    </style>
+
+</head>
+
+<body>
+    <div class="caja">
+		<div class="caja1">
+			<!-- <div class="bordes"> -->
+			<p class="etiquetas"> <a href="../../index.html">  <img src="imagenesmemotest/mambrublack.png" alt="Home" style="height: 60px; margin-top: -20px;"> </a> </p>
+			<!-- </div> -->
+		</div>
+		<div class="caja1">
+			<!-- <div class="bordes"> -->
+			<p class="etiquetas"> <a href="../work.html"> WORK </a> </p>
+			<!-- </div> -->
+		</div>
+		<div class="caja1">
+			<!-- <div class="bordes"> -->
+				<p class="etiquetas"> <a href="../about.html"> ABOUT </a> </p>
+			<!-- </div> -->
+		</div>
+		<div class="caja1">
+			<!-- <div class="bordes"> -->
+			<p class="etiquetas"> <a href="../contact.html"> CONTACT </a> </p>
+			<!-- </div> -->
+		</div>
+	</div>
+    
+    <div class="cajatop">
+        <div class="cajatitulo">
+            <p id="titulo"> FRAGMENTOS DE UN TEMBLOR (EX SOLAS) </p>
+        </div>
+        <div class="cajasubtitulo">
+            <p class="subtitulo">
+                SHORT FILM <br>
+                FICTION-FAMILY DRAMA <br>
+                ARGENTINA <br>
+                IN POSTPRODUCTION <br>
+            </p>
+        </div>
+    </div>
+
+     <div class="stillmain">
+            <img src="imagenesfragmentos/Still 1.png" alt="FRAGMENTOS DE UN TEMBLOR"> 
+    </div>
+
+    <div class="cajasinopsis">
+         <p class="sinopsis">
+            Three women, bound by blood and separated by their ages, face the aftermath of their matriarch’s suicide. Grief inhabits the silence between them, where memory trembles and gestures replace words. A fragmented portrait of intergenerational loss and the fragile hope of connection. 
+        </p>
+    </div>
+
+    <div class="cajaficha">
+        <div class="cajamargenizq"></div>
+        <div class="cajaposter">
+            <img src="imagenesfragmentos/poster.jpg" alt="FRAGMENTOS DE UN TEMBLOR">
+        </div>
+        <div class="cajas">
+            <p class="tituloficha">DATA SHEET</p>
+            <p class="infoficha">
+                Dir <b> Marbella Tescari </b><br>
+                Title <b> Fragmentos de un temblor </b><br>
+                Title Int’l <b> Fragments of the aftershock </b><br>
+                Country <b> Argentina - Venezuela - USA</b><br>
+                Language <b> Spanish </b><br>
+                Genre <b> Drama / Family Drama </b><br>
+                Length <b> 12 mins </b><br>
+                Shooting Format <b>Sony F65 / Digital Color </b><br>
+            </p>
+            <p class="tituloficha">PROD</p>
+            <p class="infoficha">
+                Universidad del Cine <br>
+                Child Hope Center Inc. <br>
+                Mambrú Cine <br>
+                ABC BAFICI
+            </p>
+            <p class="tituloficha">CAST</p>
+            <p class="infoficha">
+                Emanuel Biaggini <br>
+                Mechi Bove <br>
+                Emma Baigorria <br>
+                Carolina de la Torre <br>
+                Marie Lie Font
+            </p>
+        </div>
+        <div class="cajas"></div>
+    </div>
+
+    <div class="cajastills">
+        <div class="stills">
+             <img src="imagenesfragmentos/Still 2.png" alt="FRAGMENTOS DE UN TEMBLOR">
+        </div>
+         <div class="stills">
+             <img src="imagenesfragmentos/Still 3.png" alt="FRAGMENTOS DE UN TEMBLOR">
+        </div>
+         <div class="stills">
+             <img src="imagenesfragmentos/Still 4.png" alt="FRAGMENTOS DE UN TEMBLOR">
+        </div>
+    </div>
+
+    <div class="cajadire">
+        <div class="cajainfodire">
+            <p class="titulodire">ABOUT THE DIRECTOR</p>
+            <p class="infodire">
+                Marbella Tescari (Caracas, 1994) is a film director and screenwriter based in Buenos Aires. She studies Filmmaking at the Universidad del Cine (FUC), where she also works as a teaching assistant in Film Aesthetics. Her short films Longing and Family Legacy were selected and produced by the university. Her third short film, Fragments of the aftershock, was selected for the ABC BAFICI post-production mentorships and participated in BAFICI’s distribution workshops. Her work explores family ties, grief, desire, and the silences that inhabit the body.
+            </p>
+        </div>
+        <div class="cajafotodire">
+            <div class="fotodire">
+                <img src="imagenesfragmentos/fotodire.jpg" alt="DirectorMarbellaTescari">
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="cajainsta">
+        <p id="insta">
+            @memotestpelicula
+        </p>
+    </div>
+-->
+   <div class="cajacolumnas">
+            <div class="columnas">
+                <p class="infotitulos2">
+                    MAMBRU cine
+                </p>
+                <hr class="linea">
+                <p class="infotitulos">
+                    MAMBRU cine
+                </p>
+                <p class="info">
+                    MADRID, ESP
+                    <br>
+                    BUENOS AIRES, ARG
+                </p>
+            </div>
+
+            <div class="columnas">
+                <p class="infotitulos2">
+                    MENU
+                </p>
+                <hr class="linea">
+                <br>
+                <p class="info">
+                  
+                </p>
+            </div>
+
+            <div class="columnas">
+                <p class="infotitulos2">
+                    SOCIALS
+                </p>
+                <hr class="linea">
+                <p class="infotitulos">
+                    SOCIALS
+                </p>
+                <p class="info">
+                    <a href="https://www.instagram.com/mambrucine?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> INSTAGRAM
+                    <br>
+                    <a href="https://vimeo.com/user243295687?fl=pp&fe=sh"> VIMEO
+                    <br>
+                    <a href=""> LINKEDIN
+                </p>
+            </div>
+
+            <div class="columnas">
+                <p class="infotitulos2">
+                   CONTACT
+                </p>
+                <hr class="linea">
+                <br>
+                <p class="info">
+                   
+                </p>
+            </div>
+        </div>  
+
+    
+
+
+</body>
